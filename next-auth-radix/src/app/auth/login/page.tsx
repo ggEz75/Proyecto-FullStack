@@ -1,17 +1,30 @@
-import { Button } from '@radix-ui/themes'
-import { BookmarkIcon } from '@radix-ui/react-icons' // importamos el icono que queramos usar
+import { Container, Card, Heading, Flex, Text } from '@radix-ui/themes'
+import SigninForm from '@/components/auth/SigninForm'
+import Link from 'next/link';
+
 
 function LoginPage() {
     return (
-        <div>
-            LoginPage
-            <Button>
-            <BookmarkIcon />
-            Login
-            </Button>
-                
-            
-        </div>
+        <>
+            <Container size="1" height="100%" className='p-3 md:p-0 '>
+                <Flex className='h-screen w-full items-center '>
+
+                <Card className='w-full p-7'>
+                <Heading>Sign In</Heading>
+                <SigninForm />
+                <Flex>
+                    <Text>
+                        Don't have an account?
+                    </Text>
+                    <Link href="/auth/register" className='text-blue-500 ml-1'>
+                        Sign Up
+                    </Link>
+                </Flex>
+
+                </Card>
+                </Flex>
+            </Container>    
+        </>
         
     )
 }
