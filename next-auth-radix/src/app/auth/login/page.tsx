@@ -11,7 +11,9 @@ function LoginPage() {
 
                 <Card className='w-full p-7'>
                 <Heading>Sign In</Heading>
+
                 <SigninForm />
+                
                 <Flex>
                     <Text>
                         Don't have an account?

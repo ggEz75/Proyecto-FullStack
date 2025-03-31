@@ -11,6 +11,7 @@ function RegisterPage() {
 
                 <Card className='w-full p-7'>
                 <Heading>Sign Up</Heading>
+                
                 <SignupForm />
 
                 <Flex>
